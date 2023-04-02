@@ -1,9 +1,47 @@
-<!-- Bring in your successful HTML/CSS from the Flexbox lab -->
-<!-- Your page will need a form in it, but that form will not need an action
-    You will need to add the attribute "name" to your input
-    with a value of 'resto'
+<html lang="en">
 
-    You will need to hook your script.js to this file for the midterm to work
-    you will need a "filter" button with a type of "button" and a
-    "load data" button with a type of "submit" on it
--->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shauns lab for inst377</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    
+     <div= class="wrapper">
+        <header class="header">
+            <h1>Shauns INST377 lab</h1>
+        </header>
+        <div class="container">
+            <div class="left_section">
+                <h3>Form inputs</h3>
+                <form 
+                action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json"
+                class="box main_form"
+                >
+
+                    <div>
+                        <label for="resto">Restaurant Name</label>
+                        <input type="text" id="resto" name="resto">
+                    </div>
+                    <button type="submit">load data</button>
+                    <button type="button" class="filter_button" >filter data</button>
+                </form>
+            </div>
+            <div class="right_section">
+            <h3>Local Restaurants</h3>
+            <div class="restaurants_list">A little of local restaurants</div>
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <a href="A list of Restaurants from an API">https://github.com/sinestra00/sinestra00.github.io-INST377-labwork</a>
+             </footer>
+         </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
